@@ -16,6 +16,10 @@ if (isset($_GET['p']))
         case 'articles':
         require_once "include/articles.inc.php";
         break;
+
+        case 'contact':
+        require_once "include/contact.inc.php";
+        break;
     }
 }
 

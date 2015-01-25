@@ -22,6 +22,10 @@ if (isset($_GET['p']))
         break;
     }
 }
+else
+{
+    header ("Location: ?p=articles&function=list");
+}
 
 $tpl->draw("footer");
 ?>

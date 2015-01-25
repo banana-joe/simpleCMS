@@ -83,6 +83,10 @@ body {
     font-size: 15px;
 }
 
+.footer-social a {
+    font-size: 24px;
+}
+
 #slider {
 	width: 875px;
     max-width: 100%;
@@ -138,3 +142,9 @@ body {
 	color: #7a7a80;
 }
 /* Artikel < - */
+
+.alert {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -48,7 +48,13 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="?p=articles&function=list">News</a></li>
                 <li><a href="#">Forum</a></li>
-                <li><a href="?p=contact">Kontakt</a></li>
+                <li><a href="?p=contact">Contact</a></li>
+                {if="isLogged()"}
+                <li><a href="?p=logout">Logout</a></li>
+                {else}
+                <li><a href="?p=login">Login</a></li>
+                {/if}
+                {if="isAdmin()"}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administration <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -62,6 +68,7 @@
                         <li><a href="#">Mitglieder verwalten</a></li>
                     </ul>
                 </li>
+                {/if}
             </ul>
         </div>
     </div>

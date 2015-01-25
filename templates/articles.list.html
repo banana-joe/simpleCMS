@@ -1,0 +1,21 @@
+    <div id="page">
+        <div id="content-titel">
+            <i class="fa fa-globe"></i> News
+        </div>
+        <hr>
+        {loop="article"}
+        <div class="artikel">
+            <div class="category">
+                <img src="img/articles/art1.jpg" width="160" height="200" alt="Lorem ipsum">
+            </div>
+            <h3><a href="?p=articles&function=show&id={$value.id}">{$value.title}</a></h3>
+            <div class="info">
+                <i class="fa fa-user"></i> {$value.author} | <i class="fa fa-clock-o"></i> {$value.date}
+            </div>
+            <div class="content">
+                <p>{$value.content}</p>
+            </div>
+        </div>
+        <hr>
+        {/loop}
+    </div>

@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('bootstrap.min.css');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(../img/bg.png);
+    background-repeat: repeat;
+    padding-top: 70px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.clear {
+    clear: both;
+}
+
+#navigation {
+    background-color: #fff;
+    border-bottom: 2px solid #093;
+}
+
+#content-titel {
+	font-style: normal;
+	font-weight: 300;
+	font-family: 'Oswald', 'sans-serif';
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#page {
+    background-color: #fff;
+    border: 1px solid #CCC;
+    max-width: 875px;
+    height: auto;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#page hr {
+    height: 0px;
+	border: 0px solid #D7D7D9;
+	border-top-width: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+#page p {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    background-color: #fff;
+    border-top: 1px solid #093;
+}
+
+.footer p {
+    padding-top: 8px;
+	font-style: normal;
+	font-weight: 300;
+	font-family: 'Oswald', 'sans-serif';
+    font-size: 15px;
+}
+
+#slider {
+	width: 875px;
+    max-width: 100%;
+	box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+/*  - > Artikel */
+.artikel {
+    width: auto;
+    height: auto;
+    margin-top: 0;
+}
+
+.artikel .category {
+	background-color: #093;
+	float: left;
+	width: 160px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+.artikel h3 {
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	font-style: semi-bold;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.artikel a {
+	color: #333;
+	text-decoration: none;
+}
+
+.artikel .info {
+	width: auto;
+	background-color: #f5f5f5;
+	margin-left: 170px;
+	color: #98989d;
+	font-size: 12px;
+	padding: 10px;
+	border-top: 1px solid #d7d7d9;
+}
+
+.artikel .content {
+	text-align: justify;
+	padding-top: 5px;
+	font-size: 12px;
+	color: #7a7a80;
+}
+/* Artikel < - */

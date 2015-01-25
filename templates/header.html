@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Erste Schritte</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<!-- bxslider -->
+<link href="css/jquery.bxslider.css" rel="stylesheet">
+<script src="js/jquery.bxslider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+		$('.bxslider').bxSlider({
+			captions: true,
+            controls: false,
+            touchEnabled: true,
+            pager: false,
+            responsive: true,
+            auto: true
+		});
+    });
+</script>
+<!-- bxslider -->
+</head>
+
+<body>
+<!-- Navigation -->
+<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Navigation ein-/ausblenden</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">cannabis-info.de</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Neuigkeiten</a></li>
+                <li class="active"><a href="page.html">Forum</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administration <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Haupteinstellungen</li>
+                        <li class="divider"></li>
+                        <li><a href="#">SEO-Einträge</a></li>
+                        <li><a href="#">Seiten verwalten</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Community</li>
+                        <li><a href="#">Forum verwalten</a></li>
+                        <li><a href="#">Mitglieder verwalten</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navigation -->
+<!-- Seiteninhalt -->
+<div class="container">
+    <!-- bxslider -->
+    <div id="slider">
+        <ul class="bxslider">
+            <li><a href="#">
+                <img src="img/bxslider/1.png" alt="Willkommen auf Cannabis-Info.de!" title="Willkommen auf Cannabis-Info.de!">
+            </a></li>
+            <li><a href="#">
+                <img src="img/bxslider/2.jpg" alt="Willkommen auf Cannabis-Info.de!" title="Willkommen auf Cannabis-Info.de!">
+            </a></li>
+        </ul>
+    </div>
+    <!-- bxslider -->

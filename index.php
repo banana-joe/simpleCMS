@@ -1,6 +1,8 @@
 <?php
+session_start();
 require_once "include/config.inc.php";
 require_once "include/mysql.inc.php";
+require_once "include/functions.inc.php";
 // + rainTPL template engine
 require_once "include/rain.tpl.class.php";
 raintpl::$tpl_dir = "templates/";
@@ -19,6 +21,14 @@ if (isset($_GET['p']))
 
         case 'contact':
         require_once "include/contact.inc.php";
+        break;
+
+        case 'login':
+        require_once "include/login.inc.php";
+        break;
+
+        case 'logout':
+        require_once "include/logout.inc.php";
         break;
     }
 }

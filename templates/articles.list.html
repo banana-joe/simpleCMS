@@ -6,7 +6,7 @@
         {loop="article"}
         <div class="artikel">
             <div class="category">
-                <img src="img/articles/art1.jpg" width="160" height="200" alt="Lorem ipsum">
+                <img src="img/articles/{$value.thumb}" width="160" height="200" alt="{$value.title}">
             </div>
             <h3><a href="?p=articles&function=show&id={$value.id}">{$value.title}</a></h3>
             <div class="info">
